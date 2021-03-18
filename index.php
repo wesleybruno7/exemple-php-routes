@@ -23,7 +23,9 @@ $router->get("/categoria/{cat_uri}", "Web:category");
 
 /* contato */
 $router->group("contato"); // agrupa todas as rotas começadas com "/blog" daqui para baixo
-$router->get("/", "Web:contact");
+$router->get("/", "Web:contact"); // executa o get
+$router->post("/", "Web:contact"); // executa um post
+$router->delete("/", "Web:contact"); // executa um delete
 $router->get("/{sector}", "Web:contactSector"); // regras dinamicas devem sempre ficar acima da regra fixa de rota
 $router->get("/suporte", "Web:support");// regras fixas devem sempre ficar abaixo da regra dinamica de rota
 

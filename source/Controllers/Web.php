@@ -31,6 +31,9 @@ class Web
     public function contact($data) {
         echo "<h1>Web Contato</h1>";
         var_dump($data);
+
+        $url = URL_BASE; // define a $url que vai ser utilizada no HTML (na tag form no atributo action, para onde enviar o submit do form)
+        require __DIR__ . "/../Views/contact.php"; // importa o html (renderiza a view apontada)
     }
 
     public function error($data) {
