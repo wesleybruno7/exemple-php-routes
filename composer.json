@@ -1,0 +1,20 @@
+{
+    "name": "user/rotas",
+    "authors": [
+        {
+            "name": "Wesley",
+            "email": "wesley@ao4.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "^1.0"
+    }
+}
